@@ -24,9 +24,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+ 
+
 - (IBAction)DisplayText:(id)sender {
-    
-    
-    self.Label.text=self.TextField.text;
+    self.Label.text=[self.TextField.text stringByAppendingString:@" x"];
+    [self resignFirstResponder];
 }
+
+
+
 @end
