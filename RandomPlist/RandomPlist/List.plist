@@ -3,16 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>List</key>
-	<string></string>
-	<key>item 0</key>
-	<string>one</string>
-	<key>item 1</key>
-	<string>two</string>
-	<key>item 2</key>
-	<string>three</string>
-	<key>item 3</key>
-	<string>four</string>
-	<key>item 4</key>
-	<string>five</string>
+	<array>
+		<string>one</string>
+		<string>two</string>
+		<string>three</string>
+		<string>four</string>
+		<string>five</string>
+	</array>
 </dict>
 </plist>

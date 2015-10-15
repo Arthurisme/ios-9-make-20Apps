@@ -31,7 +31,7 @@
     
     NSMutableArray *items =[wordDIC valueForKey:@"List"];
     
-    int RandomNumber = arc4random() % 5;
+    int RandomNumber = arc4random() % [items count];
     NSString *word =[items objectAtIndex:RandomNumber];
     [self.Label setText:[[NSString alloc]initWithFormat:@"%@", word]];
 
