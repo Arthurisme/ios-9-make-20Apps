@@ -1,5 +1,7 @@
 # ios-9-make-20Apps
 ios-9-make-20Apps
+First chapter: using object-c.
+Since middle chapter2: using swift.
 
 This is a tutorial study from udemy :https://www.udemy.com/the-complete-ios-9-swift-20-guide-make-20-applications/?dtcode=mF61XWk3ThDR
 
