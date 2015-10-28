@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BrowserApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MNd-Ss-ZNq">
+                                <rect key="frame" x="87" y="121" width="169" height="435"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zwd-HD-R3s"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hoP-vu-Mg7">
+                                <rect key="frame" x="0.0" y="594" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="stop" id="ttW-nS-IIG">
+                                        <connections>
+                                            <action selector="stopLoading" destination="MNd-Ss-ZNq" id="zO4-f7-OWd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="refresh" id="Di2-7j-6C9">
+                                        <connections>
+                                            <action selector="reload" destination="MNd-Ss-ZNq" id="unn-So-wpp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2dW-Ml-CHo"/>
+                                    <barButtonItem systemItem="rewind" id="lp9-9r-9CG">
+                                        <connections>
+                                            <action selector="goBack" destination="MNd-Ss-ZNq" id="3tM-oC-uTX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="0FT-uY-YoJ">
+                                        <connections>
+                                            <action selector="goForward" destination="MNd-Ss-ZNq" id="7eX-Kl-itP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="nEk-IC-OKA">
+                                <rect key="frame" x="169" y="306" width="37" height="37"/>
+                                <color key="color" red="0.2020065875" green="0.19872132410000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rhj-U6-9zr">
+                                <rect key="frame" x="0.0" y="14" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9MQ-Kj-ERz"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hoP-vu-Mg7" secondAttribute="bottom" constant="29" id="WQO-Ls-hzH"/>
+                            <constraint firstItem="rhj-U6-9zr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-6" id="Znc-6q-xQw"/>
+                            <constraint firstItem="hoP-vu-Mg7" firstAttribute="top" secondItem="MNd-Ss-ZNq" secondAttribute="bottom" constant="38" id="fe0-Sm-Mma"/>
+                            <constraint firstItem="MNd-Ss-ZNq" firstAttribute="top" secondItem="rhj-U6-9zr" secondAttribute="bottom" constant="63" id="lPn-El-TpT"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ActInd" destination="nEk-IC-OKA" id="O2q-oH-jnc"/>
+                        <outlet property="SearchBar" destination="rhj-U6-9zr" id="czU-q7-yCT"/>
+                        <outlet property="Webview" destination="MNd-Ss-ZNq" id="xgn-Pq-n6q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="429.5"/>
+        </scene>
+    </scenes>
+</document>
