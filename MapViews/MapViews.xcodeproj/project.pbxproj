@@ -14,6 +14,7 @@
 		8E9B03291BE1046F006FFABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9B03271BE1046F006FFABE /* LaunchScreen.storyboard */; };
 		8E9B03341BE10470006FFABE /* MapViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B03331BE10470006FFABE /* MapViewsTests.swift */; };
 		8E9B033F1BE10471006FFABE /* MapViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B033E1BE10471006FFABE /* MapViewsUITests.swift */; };
+		8E9B034D1BE1090E006FFABE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9B034C1BE1090E006FFABE /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8E9B033A1BE10471006FFABE /* MapViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9B033E1BE10471006FFABE /* MapViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewsUITests.swift; sourceTree = "<group>"; };
 		8E9B03401BE10471006FFABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9B034C1BE1090E006FFABE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9B034D1BE1090E006FFABE /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		8E9B03121BE1046E006FFABE = {
 			isa = PBXGroup;
 			children = (
+				8E9B034C1BE1090E006FFABE /* MapKit.framework */,
 				8E9B031D1BE1046E006FFABE /* MapViews */,
 				8E9B03321BE10470006FFABE /* MapViewsTests */,
 				8E9B033D1BE10471006FFABE /* MapViewsUITests */,
