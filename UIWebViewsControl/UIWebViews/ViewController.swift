@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var Webview: UIWebView!
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
@@ -19,7 +19,9 @@ class ViewController: UIViewController {
 //        let url = NSURL(string:"http://www.irooms.ca")
         let url = NSURL(string:"http://www.google.com")
         let request = NSURLRequest(URL:url!)
+        Webview.delegate = self
         Webview.loadRequest ( request )
+        
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,15 +32,24 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func webViewDidStartLoad(_ : UIWebView){
+    func webViewDidStartLoad( Webview: UIWebView ){
         
         ActInd.startAnimating()
     }
 
-    func webViewDidStopLoad(_ : UIWebView){
+    func webViewDidFinishLoad( Webview: UIWebView ){
         
         ActInd.stopAnimating()
     }
 
+
+    @IBAction func start(sender: AnyObject) {
+        ActInd.startAnimating()
+    }
+    @IBAction func stop(sender: AnyObject) {
+        ActInd.stopAnimating()
+
+    }
+    
 }
 

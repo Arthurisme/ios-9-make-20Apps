@@ -23,6 +23,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let pinLocation : CLLocationCoordinate2D = CLLocationCoordinate2DMake(37.7381616,-122.4662438)
+        let objectAnn = MKPointAnnotation()
+        objectAnn.coordinate=pinLocation
+        objectAnn.title="London bridge"
+        objectAnn.subtitle="London,UK"
+        self.MapViews.addAnnotation(objectAnn)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,6 +60,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         manager.startUpdatingLocation()
         MapViews.showsUserLocation = true
+    }
+    @IBAction func drictions(sender: AnyObject) {
+        
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://maps.apple.com/maps?daadr=37.7381616,-122.4662438")!)
+        
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
