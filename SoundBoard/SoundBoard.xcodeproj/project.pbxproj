@@ -22,6 +22,7 @@
 		8EA682451BE955B4000B367C /* symbol1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6823D1BE955B4000B367C /* symbol1.mp3 */; settings = {ASSET_TAGS = (); }; };
 		8EA682461BE955B4000B367C /* symbol2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6823E1BE955B4000B367C /* symbol2.mp3 */; settings = {ASSET_TAGS = (); }; };
 		8EA682471BE955B4000B367C /* symbol3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6823F1BE955B4000B367C /* symbol3.mp3 */; settings = {ASSET_TAGS = (); }; };
+		8EA682491BE95822000B367C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA682481BE95822000B367C /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		8EA6823D1BE955B4000B367C /* symbol1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = symbol1.mp3; sourceTree = "<group>"; };
 		8EA6823E1BE955B4000B367C /* symbol2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = symbol2.mp3; sourceTree = "<group>"; };
 		8EA6823F1BE955B4000B367C /* symbol3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = symbol3.mp3; sourceTree = "<group>"; };
+		8EA682481BE95822000B367C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA682491BE95822000B367C /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +96,7 @@
 		8EA681FE1BE95590000B367C = {
 			isa = PBXGroup;
 			children = (
+				8EA682481BE95822000B367C /* AVFoundation.framework */,
 				8EA682091BE95591000B367C /* SoundBoard */,
 				8EA6821E1BE95591000B367C /* SoundBoardTests */,
 				8EA682291BE95591000B367C /* SoundBoardUITests */,
