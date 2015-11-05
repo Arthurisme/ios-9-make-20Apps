@@ -9,9 +9,13 @@
 import UIKit
 
 class AddViewController: UIViewController {
+ 
     @IBOutlet weak var CarMakeTextField: UITextField!
-    @IBOutlet weak var CarModelTextField: UITextField!
 
+    @IBOutlet weak var CarModelTextField: UITextField!
+    
+    @IBOutlet weak var CarYearTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,5 +37,7 @@ class AddViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func saveToDatabase(sender: AnyObject) {
+    }
 
 }

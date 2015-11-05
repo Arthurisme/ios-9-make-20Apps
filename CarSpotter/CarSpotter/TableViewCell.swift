@@ -9,6 +9,7 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
+ 
     @IBOutlet weak var CarMakeLabel: UILabel!
     @IBOutlet weak var CarModelLabel: UILabel!
     @IBOutlet weak var CarYearLabel: UILabel!
