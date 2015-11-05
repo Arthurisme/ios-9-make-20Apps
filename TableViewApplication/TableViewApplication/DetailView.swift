@@ -26,6 +26,8 @@ class DetailView: UIViewController {
         // Do any additional setup after loading the view.
         
         DetailImageView.image = UIImage(named: SentData1)
+        DetailTitle.text = SentData2
+        DetailDescription.text = SentData3
     }
 
     override func didReceiveMemoryWarning() {

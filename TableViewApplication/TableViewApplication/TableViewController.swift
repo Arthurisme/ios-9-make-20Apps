@@ -108,8 +108,14 @@ class TableViewController: UITableViewController {
             
             if let indexpath = self.tableView.indexPathForSelectedRow{
                 
+                let Title = TitleList[indexpath.row] as String
+                let Description = DescriptionList[indexpath.row] as String
+                
                 let Imageview = ImageList[indexpath.row] as String
                 VC.SentData1 = Imageview
+                VC.SentData2 = Title
+                VC.SentData3 = Description
+                
             }
         
         }
