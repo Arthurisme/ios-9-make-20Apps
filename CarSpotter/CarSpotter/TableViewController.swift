@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
 class TableViewController: UITableViewController {
 
-    @IBOutlet weak var CarMakeLabel: UILabel!
+    var List: Array<AnyObject> = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,23 +33,30 @@ class TableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return List.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell:TableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell" ) as! TableViewCell
+        
+        let data: NSManagedObject = List[indexPath.row] as!NSManagedObject
+        
+        cell.CarMakeLabel?.text = data.valueForKey("carmake") as? String
+        cell.CarModelLabel?.text = data.valueForKey("carmodel") as? String
+        cell.CarYearLabel?.text = data.valueForKey("caryear") as? String
+        
 
         // Configure the cell...
 
         return cell
     }
-    */
+   
 
     /*
     // Override to support conditional editing of the table view.
