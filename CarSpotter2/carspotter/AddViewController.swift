@@ -19,6 +19,7 @@ class AddViewController: UIViewController {
     
     @IBOutlet weak var CarYearTextField: UITextField!
     
+<<<<<<< HEAD
     var CarMakeStringFromSegue: String = ""
     var CarModelStringFromSegue: String = ""
 
@@ -28,11 +29,14 @@ class AddViewController: UIViewController {
 
     
     
+=======
+>>>>>>> 1699d78098dd1e864932e75d072904f9ebb2a670
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+<<<<<<< HEAD
         //show the path of the sqlite:
         let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
          pathlabel.text = String(paths)
@@ -48,6 +52,12 @@ class AddViewController: UIViewController {
         }
         
         
+=======
+               let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+        
+        pathlabel.text = String(paths)
+        SqlitePathTestView.text = String(paths)
+>>>>>>> 1699d78098dd1e864932e75d072904f9ebb2a670
 
     }
 
@@ -72,6 +82,7 @@ class AddViewController: UIViewController {
         let theContext: NSManagedObjectContext = AppDel.managedObjectContext
         let theEnt = NSEntityDescription.entityForName("CarList", inManagedObjectContext: theContext)
         
+<<<<<<< HEAD
         if (existingItem != nil) {
             
             existingItem.setValue(CarMakeTextField.text as String?, forKey: "carmake")
@@ -93,6 +104,13 @@ class AddViewController: UIViewController {
         
         
     
+=======
+        let newItem = Model(entity: theEnt!, insertIntoManagedObjectContext: theContext)
+        
+        newItem.carmake = CarMakeTextField.text!
+        newItem.carmodel = CarModelTextField.text!
+        newItem.caryear = CarYearTextField.text!
+>>>>>>> 1699d78098dd1e864932e75d072904f9ebb2a670
         
         do{
             try theContext.save()

@@ -50,7 +50,10 @@
                                     <outlet property="CarMakeLabel" destination="MSR-Jv-gUm" id="qC6-dx-8QU"/>
                                     <outlet property="CarModelLabel" destination="ImX-yg-vIR" id="tg5-3O-PbO"/>
                                     <outlet property="CarYearLabel" destination="muI-OM-E46" id="bTj-2z-aQA"/>
+<<<<<<< HEAD
                                     <segue destination="1SJ-sb-MGe" kind="show" identifier="upDateSegue" id="jwU-WF-8YR"/>
+=======
+>>>>>>> 1699d78098dd1e864932e75d072904f9ebb2a670
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -181,7 +184,10 @@
             <point key="canvasLocation" x="1420" y="-197"/>
         </scene>
     </scenes>
+<<<<<<< HEAD
     <inferredMetricsTieBreakers>
         <segue reference="jwU-WF-8YR"/>
     </inferredMetricsTieBreakers>
+=======
+>>>>>>> 1699d78098dd1e864932e75d072904f9ebb2a670
 </document>

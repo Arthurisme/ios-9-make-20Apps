@@ -109,13 +109,18 @@ class TableViewController: UITableViewController {
     }
     */
 
+<<<<<<< HEAD
     
+=======
+    /*
+>>>>>>> 1699d78098dd1e864932e75d072904f9ebb2a670
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+<<<<<<< HEAD
         
         if segue.identifier == "upDateSegue"{
             
@@ -138,3 +143,9 @@ class TableViewController: UITableViewController {
 
 }
 }
+=======
+    }
+    */
+
+}
+>>>>>>> 1699d78098dd1e864932e75d072904f9ebb2a670
