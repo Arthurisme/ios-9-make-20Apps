@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
 class AddViewController: UIViewController {
  
+    @IBOutlet weak var SqlitePathTestView: UITextView!
+      @IBOutlet weak var pathlabel: UILabel!
     @IBOutlet weak var CarMakeTextField: UITextField!
 
     @IBOutlet weak var CarModelTextField: UITextField!
@@ -20,6 +23,12 @@ class AddViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+               let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+        
+        pathlabel.text = String(paths)
+        SqlitePathTestView.text = String(paths)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +47,28 @@ class AddViewController: UIViewController {
     }
     */
     @IBAction func saveToDatabase(sender: AnyObject) {
+        
+        let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let theContext: NSManagedObjectContext = AppDel.managedObjectContext
+        let theEnt = NSEntityDescription.entityForName("CarList", inManagedObjectContext: theContext)
+        
+        let newItem = Model(entity: theEnt!, insertIntoManagedObjectContext: theContext)
+        
+        newItem.carmake = CarMakeTextField.text!
+        newItem.carmodel = CarModelTextField.text!
+        newItem.caryear = CarYearTextField.text!
+        
+        do{
+            try theContext.save()
+        }
+        
+        catch _ {
+            
+        }
+        
+        self.navigationController?.popToRootViewControllerAnimated(true)
+        
+        
     }
 
 }
