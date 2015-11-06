@@ -22,6 +22,11 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+ 
+        
+        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,12 +45,23 @@ class TableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return List.count
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let Context: NSManagedObjectContext = AppDel.managedObjectContext
+        let request = NSFetchRequest(entityName: "CarList")
+        
+        List = try! Context.executeFetchRequest(request)
+        tableView.reloadData()
+        
+    }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:TableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell" ) as! TableViewCell
         
-        let data: NSManagedObject = List[indexPath.row] as!NSManagedObject
+        let data: NSManagedObject = List[indexPath.row] as! NSManagedObject
         
         cell.CarMakeLabel?.text = data.valueForKey("carmake") as? String
         cell.CarModelLabel?.text = data.valueForKey("carmodel") as? String
