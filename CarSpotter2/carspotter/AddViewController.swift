@@ -4,7 +4,7 @@
 //
 //  Created by Arthur on 2015-11-05.
 //  Copyright © 2015 Arthur. All rights reserved.
-//
+// check out from git via the morning copy
 
 import UIKit
 import CoreData
