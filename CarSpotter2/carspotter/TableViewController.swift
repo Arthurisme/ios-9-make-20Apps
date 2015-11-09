@@ -74,25 +74,47 @@ class TableViewController: UITableViewController {
     }
    
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+    
 
-    /*
+   
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
+   
+        let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let  Context: NSManagedObjectContext =  AppDel.managedObjectContext
+   
+        
+        
+        if editingStyle ==  .Delete {
+            
+            //delete from the database:
+            Context.deleteObject(List[indexPath.row] as! NSManagedObject)
+            
+            //delete from the list:
+            List.removeAtIndex(indexPath.row)
+            
+            
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
+        var error : NSError? = nil
+        do{
+            try Context.save()
+            
+            
+        }
+        catch let error1 as NSError{
+            error = error1
+            print(error)
+            abort()
+        }
     }
-    */
+  
 
     /*
     // Override to support rearranging the table view.
