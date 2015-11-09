@@ -91,16 +91,16 @@ class TableViewController: UITableViewController {
    
         
         
-        if editingStyle == .Delete {
+        if editingStyle ==  .Delete {
             
             //delete from the database:
             Context.deleteObject(List[indexPath.row] as! NSManagedObject)
             
             //delete from the list:
-            //List.removeAtIndex(indexPath.row)
+            List.removeAtIndex(indexPath.row)
             
             
-            //tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
         var error : NSError? = nil
         do{
