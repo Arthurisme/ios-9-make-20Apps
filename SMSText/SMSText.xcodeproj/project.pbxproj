@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E3C3BF51BF119B200EA16F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C3BF41BF119B200EA16F2 /* AppDelegate.swift */; };
+		8E3C3BF71BF119B200EA16F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C3BF61BF119B200EA16F2 /* ViewController.swift */; };
+		8E3C3BFA1BF119B200EA16F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E3C3BF81BF119B200EA16F2 /* Main.storyboard */; };
+		8E3C3BFC1BF119B200EA16F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3C3BFB1BF119B200EA16F2 /* Assets.xcassets */; };
+		8E3C3BFF1BF119B200EA16F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E3C3BFD1BF119B200EA16F2 /* LaunchScreen.storyboard */; };
+		8E3C3C0A1BF119B200EA16F2 /* SMSTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C3C091BF119B200EA16F2 /* SMSTextTests.swift */; };
+		8E3C3C151BF119B200EA16F2 /* SMSTextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C3C141BF119B200EA16F2 /* SMSTextUITests.swift */; };
+		8E3C3C231BF11AE700EA16F2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3C3C221BF11AE700EA16F2 /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E3C3C061BF119B200EA16F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E3C3BE91BF119B200EA16F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E3C3BF01BF119B200EA16F2;
+			remoteInfo = SMSText;
+		};
+		8E3C3C111BF119B200EA16F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E3C3BE91BF119B200EA16F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E3C3BF01BF119B200EA16F2;
+			remoteInfo = SMSText;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E3C3BF11BF119B200EA16F2 /* SMSText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMSText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3C3BF41BF119B200EA16F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E3C3BF61BF119B200EA16F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E3C3BF91BF119B200EA16F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E3C3BFB1BF119B200EA16F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E3C3BFE1BF119B200EA16F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E3C3C001BF119B200EA16F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E3C3C051BF119B200EA16F2 /* SMSTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3C3C091BF119B200EA16F2 /* SMSTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSTextTests.swift; sourceTree = "<group>"; };
+		8E3C3C0B1BF119B200EA16F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E3C3C101BF119B200EA16F2 /* SMSTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3C3C141BF119B200EA16F2 /* SMSTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSTextUITests.swift; sourceTree = "<group>"; };
+		8E3C3C161BF119B200EA16F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E3C3C221BF11AE700EA16F2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E3C3BEE1BF119B200EA16F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3C3C231BF11AE700EA16F2 /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E3C3C021BF119B200EA16F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E3C3C0D1BF119B200EA16F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E3C3BE81BF119B200EA16F2 = {
+			isa = PBXGroup;
+			children = (
+				8E3C3C221BF11AE700EA16F2 /* MessageUI.framework */,
+				8E3C3BF31BF119B200EA16F2 /* SMSText */,
+				8E3C3C081BF119B200EA16F2 /* SMSTextTests */,
+				8E3C3C131BF119B200EA16F2 /* SMSTextUITests */,
+				8E3C3BF21BF119B200EA16F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E3C3BF21BF119B200EA16F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E3C3BF11BF119B200EA16F2 /* SMSText.app */,
+				8E3C3C051BF119B200EA16F2 /* SMSTextTests.xctest */,
+				8E3C3C101BF119B200EA16F2 /* SMSTextUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E3C3BF31BF119B200EA16F2 /* SMSText */ = {
+			isa = PBXGroup;
+			children = (
+				8E3C3BF41BF119B200EA16F2 /* AppDelegate.swift */,
+				8E3C3BF61BF119B200EA16F2 /* ViewController.swift */,
+				8E3C3BF81BF119B200EA16F2 /* Main.storyboard */,
+				8E3C3BFB1BF119B200EA16F2 /* Assets.xcassets */,
+				8E3C3BFD1BF119B200EA16F2 /* LaunchScreen.storyboard */,
+				8E3C3C001BF119B200EA16F2 /* Info.plist */,
+			);
+			path = SMSText;
+			sourceTree = "<group>";
+		};
+		8E3C3C081BF119B200EA16F2 /* SMSTextTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E3C3C091BF119B200EA16F2 /* SMSTextTests.swift */,
+				8E3C3C0B1BF119B200EA16F2 /* Info.plist */,
+			);
+			path = SMSTextTests;
+			sourceTree = "<group>";
+		};
+		8E3C3C131BF119B200EA16F2 /* SMSTextUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E3C3C141BF119B200EA16F2 /* SMSTextUITests.swift */,
+				8E3C3C161BF119B200EA16F2 /* Info.plist */,
+			);
+			path = SMSTextUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E3C3BF01BF119B200EA16F2 /* SMSText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3C3C191BF119B200EA16F2 /* Build configuration list for PBXNativeTarget "SMSText" */;
+			buildPhases = (
+				8E3C3BED1BF119B200EA16F2 /* Sources */,
+				8E3C3BEE1BF119B200EA16F2 /* Frameworks */,
+				8E3C3BEF1BF119B200EA16F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMSText;
+			productName = SMSText;
+			productReference = 8E3C3BF11BF119B200EA16F2 /* SMSText.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E3C3C041BF119B200EA16F2 /* SMSTextTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3C3C1C1BF119B200EA16F2 /* Build configuration list for PBXNativeTarget "SMSTextTests" */;
+			buildPhases = (
+				8E3C3C011BF119B200EA16F2 /* Sources */,
+				8E3C3C021BF119B200EA16F2 /* Frameworks */,
+				8E3C3C031BF119B200EA16F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E3C3C071BF119B200EA16F2 /* PBXTargetDependency */,
+			);
+			name = SMSTextTests;
+			productName = SMSTextTests;
+			productReference = 8E3C3C051BF119B200EA16F2 /* SMSTextTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E3C3C0F1BF119B200EA16F2 /* SMSTextUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3C3C1F1BF119B200EA16F2 /* Build configuration list for PBXNativeTarget "SMSTextUITests" */;
+			buildPhases = (
+				8E3C3C0C1BF119B200EA16F2 /* Sources */,
+				8E3C3C0D1BF119B200EA16F2 /* Frameworks */,
+				8E3C3C0E1BF119B200EA16F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E3C3C121BF119B200EA16F2 /* PBXTargetDependency */,
+			);
+			name = SMSTextUITests;
+			productName = SMSTextUITests;
+			productReference = 8E3C3C101BF119B200EA16F2 /* SMSTextUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E3C3BE91BF119B200EA16F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Arthur;
+				TargetAttributes = {
+					8E3C3BF01BF119B200EA16F2 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					8E3C3C041BF119B200EA16F2 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 8E3C3BF01BF119B200EA16F2;
+					};
+					8E3C3C0F1BF119B200EA16F2 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 8E3C3BF01BF119B200EA16F2;
+					};
+				};
+			};
+			buildConfigurationList = 8E3C3BEC1BF119B200EA16F2 /* Build configuration list for PBXProject "SMSText" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E3C3BE81BF119B200EA16F2;
+			productRefGroup = 8E3C3BF21BF119B200EA16F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E3C3BF01BF119B200EA16F2 /* SMSText */,
+				8E3C3C041BF119B200EA16F2 /* SMSTextTests */,
+				8E3C3C0F1BF119B200EA16F2 /* SMSTextUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E3C3BEF1BF119B200EA16F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3C3BFF1BF119B200EA16F2 /* LaunchScreen.storyboard in Resources */,
+				8E3C3BFC1BF119B200EA16F2 /* Assets.xcassets in Resources */,
+				8E3C3BFA1BF119B200EA16F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E3C3C031BF119B200EA16F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E3C3C0E1BF119B200EA16F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E3C3BED1BF119B200EA16F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3C3BF71BF119B200EA16F2 /* ViewController.swift in Sources */,
+				8E3C3BF51BF119B200EA16F2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E3C3C011BF119B200EA16F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3C3C0A1BF119B200EA16F2 /* SMSTextTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E3C3C0C1BF119B200EA16F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3C3C151BF119B200EA16F2 /* SMSTextUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E3C3C071BF119B200EA16F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E3C3BF01BF119B200EA16F2 /* SMSText */;
+			targetProxy = 8E3C3C061BF119B200EA16F2 /* PBXContainerItemProxy */;
+		};
+		8E3C3C121BF119B200EA16F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E3C3BF01BF119B200EA16F2 /* SMSText */;
+			targetProxy = 8E3C3C111BF119B200EA16F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E3C3BF81BF119B200EA16F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E3C3BF91BF119B200EA16F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E3C3BFD1BF119B200EA16F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E3C3BFE1BF119B200EA16F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E3C3C171BF119B200EA16F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E3C3C181BF119B200EA16F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E3C3C1A1BF119B200EA16F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SMSText/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.irooms.SMSText;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E3C3C1B1BF119B200EA16F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SMSText/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.irooms.SMSText;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8E3C3C1D1BF119B200EA16F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SMSTextTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.irooms.SMSTextTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSText.app/SMSText";
+			};
+			name = Debug;
+		};
+		8E3C3C1E1BF119B200EA16F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SMSTextTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.irooms.SMSTextTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSText.app/SMSText";
+			};
+			name = Release;
+		};
+		8E3C3C201BF119B200EA16F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SMSTextUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.irooms.SMSTextUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SMSText;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8E3C3C211BF119B200EA16F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SMSTextUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.irooms.SMSTextUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SMSText;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E3C3BEC1BF119B200EA16F2 /* Build configuration list for PBXProject "SMSText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E3C3C171BF119B200EA16F2 /* Debug */,
+				8E3C3C181BF119B200EA16F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E3C3C191BF119B200EA16F2 /* Build configuration list for PBXNativeTarget "SMSText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E3C3C1A1BF119B200EA16F2 /* Debug */,
+				8E3C3C1B1BF119B200EA16F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8E3C3C1C1BF119B200EA16F2 /* Build configuration list for PBXNativeTarget "SMSTextTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E3C3C1D1BF119B200EA16F2 /* Debug */,
+				8E3C3C1E1BF119B200EA16F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8E3C3C1F1BF119B200EA16F2 /* Build configuration list for PBXNativeTarget "SMSTextUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E3C3C201BF119B200EA16F2 /* Debug */,
+				8E3C3C211BF119B200EA16F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E3C3BE91BF119B200EA16F2 /* Project object */;
+}
