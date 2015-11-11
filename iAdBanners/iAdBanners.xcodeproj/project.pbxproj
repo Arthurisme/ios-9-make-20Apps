@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E7A728B1BF3D8030034A973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A728A1BF3D8030034A973 /* AppDelegate.swift */; };
+		8E7A728D1BF3D8030034A973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A728C1BF3D8030034A973 /* ViewController.swift */; };
+		8E7A72901BF3D8030034A973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A728E1BF3D8030034A973 /* Main.storyboard */; };
+		8E7A72921BF3D8030034A973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A72911BF3D8030034A973 /* Assets.xcassets */; };
+		8E7A72951BF3D8030034A973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A72931BF3D8030034A973 /* LaunchScreen.storyboard */; };
+		8E7A72A01BF3D8030034A973 /* iAdBannersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A729F1BF3D8030034A973 /* iAdBannersTests.swift */; };
+		8E7A72AB1BF3D8040034A973 /* iAdBannersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A72AA1BF3D8040034A973 /* iAdBannersUITests.swift */; };
+		8E7A72B91BF3D8330034A973 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7A72B81BF3D8330034A973 /* iAd.framework */; };
+		8E7A72BB1BF3D83A0034A973 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7A72BA1BF3D83A0034A973 /* AdSupport.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E7A729C1BF3D8030034A973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E7A727F1BF3D8030034A973 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E7A72861BF3D8030034A973;
+			remoteInfo = iAdBanners;
+		};
+		8E7A72A71BF3D8030034A973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E7A727F1BF3D8030034A973 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E7A72861BF3D8030034A973;
+			remoteInfo = iAdBanners;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E7A72871BF3D8030034A973 /* iAdBanners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAdBanners.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7A728A1BF3D8030034A973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E7A728C1BF3D8030034A973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E7A728F1BF3D8030034A973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E7A72911BF3D8030034A973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E7A72941BF3D8030034A973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E7A72961BF3D8030034A973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E7A729B1BF3D8030034A973 /* iAdBannersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iAdBannersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7A729F1BF3D8030034A973 /* iAdBannersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAdBannersTests.swift; sourceTree = "<group>"; };
+		8E7A72A11BF3D8030034A973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E7A72A61BF3D8030034A973 /* iAdBannersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iAdBannersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7A72AA1BF3D8040034A973 /* iAdBannersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAdBannersUITests.swift; sourceTree = "<group>"; };
+		8E7A72AC1BF3D8040034A973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E7A72B81BF3D8330034A973 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		8E7A72BA1BF3D83A0034A973 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E7A72841BF3D8030034A973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7A72BB1BF3D83A0034A973 /* AdSupport.framework in Frameworks */,
+				8E7A72B91BF3D8330034A973 /* iAd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7A72981BF3D8030034A973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7A72A31BF3D8030034A973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E7A727E1BF3D8030034A973 = {
+			isa = PBXGroup;
+			children = (
+				8E7A72BA1BF3D83A0034A973 /* AdSupport.framework */,
+				8E7A72B81BF3D8330034A973 /* iAd.framework */,
+				8E7A72891BF3D8030034A973 /* iAdBanners */,
+				8E7A729E1BF3D8030034A973 /* iAdBannersTests */,
+				8E7A72A91BF3D8040034A973 /* iAdBannersUITests */,
+				8E7A72881BF3D8030034A973 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E7A72881BF3D8030034A973 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A72871BF3D8030034A973 /* iAdBanners.app */,
+				8E7A729B1BF3D8030034A973 /* iAdBannersTests.xctest */,
+				8E7A72A61BF3D8030034A973 /* iAdBannersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E7A72891BF3D8030034A973 /* iAdBanners */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A728A1BF3D8030034A973 /* AppDelegate.swift */,
+				8E7A728C1BF3D8030034A973 /* ViewController.swift */,
+				8E7A728E1BF3D8030034A973 /* Main.storyboard */,
+				8E7A72911BF3D8030034A973 /* Assets.xcassets */,
+				8E7A72931BF3D8030034A973 /* LaunchScreen.storyboard */,
+				8E7A72961BF3D8030034A973 /* Info.plist */,
+			);
+			path = iAdBanners;
+			sourceTree = "<group>";
+		};
+		8E7A729E1BF3D8030034A973 /* iAdBannersTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A729F1BF3D8030034A973 /* iAdBannersTests.swift */,
+				8E7A72A11BF3D8030034A973 /* Info.plist */,
+			);
+			path = iAdBannersTests;
+			sourceTree = "<group>";
+		};
+		8E7A72A91BF3D8040034A973 /* iAdBannersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A72AA1BF3D8040034A973 /* iAdBannersUITests.swift */,
+				8E7A72AC1BF3D8040034A973 /* Info.plist */,
+			);
+			path = iAdBannersUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E7A72861BF3D8030034A973 /* iAdBanners */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E7A72AF1BF3D8040034A973 /* Build configuration list for PBXNativeTarget "iAdBanners" */;
+			buildPhases = (
+				8E7A72831BF3D8030034A973 /* Sources */,
+				8E7A72841BF3D8030034A973 /* Frameworks */,
+				8E7A72851BF3D8030034A973 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iAdBanners;
+			productName = iAdBanners;
+			productReference = 8E7A72871BF3D8030034A973 /* iAdBanners.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E7A729A1BF3D8030034A973 /* iAdBannersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E7A72B21BF3D8040034A973 /* Build configuration list for PBXNativeTarget "iAdBannersTests" */;
+			buildPhases = (
+				8E7A72971BF3D8030034A973 /* Sources */,
+				8E7A72981BF3D8030034A973 /* Frameworks */,
+				8E7A72991BF3D8030034A973 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E7A729D1BF3D8030034A973 /* PBXTargetDependency */,
+			);
+			name = iAdBannersTests;
+			productName = iAdBannersTests;
+			productReference = 8E7A729B1BF3D8030034A973 /* iAdBannersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E7A72A51BF3D8030034A973 /* iAdBannersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E7A72B51BF3D8040034A973 /* Build configuration list for PBXNativeTarget "iAdBannersUITests" */;
+			buildPhases = (
+				8E7A72A21BF3D8030034A973 /* Sources */,
+				8E7A72A31BF3D8030034A973 /* Frameworks */,
+				8E7A72A41BF3D8030034A973 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E7A72A81BF3D8030034A973 /* PBXTargetDependency */,
+			);
+			name = iAdBannersUITests;
+			productName = iAdBannersUITests;
+			productReference = 8E7A72A61BF3D8030034A973 /* iAdBannersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E7A727F1BF3D8030034A973 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Arthur;
+				TargetAttributes = {
+					8E7A72861BF3D8030034A973 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					8E7A729A1BF3D8030034A973 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 8E7A72861BF3D8030034A973;
+					};
+					8E7A72A51BF3D8030034A973 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 8E7A72861BF3D8030034A973;
+					};
+				};
+			};
+			buildConfigurationList = 8E7A72821BF3D8030034A973 /* Build configuration list for PBXProject "iAdBanners" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E7A727E1BF3D8030034A973;
+			productRefGroup = 8E7A72881BF3D8030034A973 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E7A72861BF3D8030034A973 /* iAdBanners */,
+				8E7A729A1BF3D8030034A973 /* iAdBannersTests */,
+				8E7A72A51BF3D8030034A973 /* iAdBannersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E7A72851BF3D8030034A973 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7A72951BF3D8030034A973 /* LaunchScreen.storyboard in Resources */,
+				8E7A72921BF3D8030034A973 /* Assets.xcassets in Resources */,
+				8E7A72901BF3D8030034A973 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7A72991BF3D8030034A973 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7A72A41BF3D8030034A973 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E7A72831BF3D8030034A973 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7A728D1BF3D8030034A973 /* ViewController.swift in Sources */,
+				8E7A728B1BF3D8030034A973 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7A72971BF3D8030034A973 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7A72A01BF3D8030034A973 /* iAdBannersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7A72A21BF3D8030034A973 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7A72AB1BF3D8040034A973 /* iAdBannersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E7A729D1BF3D8030034A973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E7A72861BF3D8030034A973 /* iAdBanners */;
+			targetProxy = 8E7A729C1BF3D8030034A973 /* PBXContainerItemProxy */;
+		};
+		8E7A72A81BF3D8030034A973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E7A72861BF3D8030034A973 /* iAdBanners */;
+			targetProxy = 8E7A72A71BF3D8030034A973 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E7A728E1BF3D8030034A973 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E7A728F1BF3D8030034A973 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E7A72931BF3D8030034A973 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E7A72941BF3D8030034A973 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E7A72AD1BF3D8040034A973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E7A72AE1BF3D8040034A973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E7A72B01BF3D8040034A973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iAdBanners/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.irooms.iAdBanners;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E7A72B11BF3D8040034A973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iAdBanners/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.irooms.iAdBanners;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8E7A72B31BF3D8040034A973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iAdBannersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.irooms.iAdBannersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iAdBanners.app/iAdBanners";
+			};
+			name = Debug;
+		};
+		8E7A72B41BF3D8040034A973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iAdBannersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.irooms.iAdBannersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iAdBanners.app/iAdBanners";
+			};
+			name = Release;
+		};
+		8E7A72B61BF3D8040034A973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iAdBannersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.irooms.iAdBannersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iAdBanners;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8E7A72B71BF3D8040034A973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iAdBannersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.irooms.iAdBannersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iAdBanners;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E7A72821BF3D8030034A973 /* Build configuration list for PBXProject "iAdBanners" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E7A72AD1BF3D8040034A973 /* Debug */,
+				8E7A72AE1BF3D8040034A973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E7A72AF1BF3D8040034A973 /* Build configuration list for PBXNativeTarget "iAdBanners" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E7A72B01BF3D8040034A973 /* Debug */,
+				8E7A72B11BF3D8040034A973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8E7A72B21BF3D8040034A973 /* Build configuration list for PBXNativeTarget "iAdBannersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E7A72B31BF3D8040034A973 /* Debug */,
+				8E7A72B41BF3D8040034A973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8E7A72B51BF3D8040034A973 /* Build configuration list for PBXNativeTarget "iAdBannersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E7A72B61BF3D8040034A973 /* Debug */,
+				8E7A72B71BF3D8040034A973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E7A727F1BF3D8030034A973 /* Project object */;
+}
